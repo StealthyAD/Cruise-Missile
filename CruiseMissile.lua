@@ -18,7 +18,7 @@ util.require_natives('natives-1663599433-uno')
 ----===============----
 
 local SCRIPT_VERSION = "0.3 bis-3"
-local edition_menu = "99.3"
+local edition_menu = "99.4"
 
 ----===========----
 --- Cruise Root
