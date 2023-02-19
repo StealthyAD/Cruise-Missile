@@ -184,9 +184,9 @@ end
     ----=======----
 
     CruiseMiscs:divider("Credits")
-        local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
-        CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/SpotifyMusic")
-        CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
+    local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
+    CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/Cruise-Missile")
+    CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
     
     ----=========----
     --- Resources
