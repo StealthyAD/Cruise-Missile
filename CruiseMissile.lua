@@ -17,7 +17,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.3 bis"
+local SCRIPT_VERSION = "0.3 bis-1"
 local edition_menu = "99.3"
 
 ----===========----
@@ -163,7 +163,7 @@ end
     --- Cruise Root Presets
     ----===================----
 
-    CruiseMissileFire = CruiseRoot:slider("Cruise Missile Range", {"cruisemissilerange"}, "Make sure you put the limit atleast 99 KM/H\nE.G: you want unlimited range, put the max.", 2, 99, 4, 1, function()end) -- Maximise your chance to hit enemy to high range
+    CruiseMissileFire = CruiseRoot:slider("Cruise Missile Range", {"cruisemissilerange"}, "Make sure you put the limit atleast 99 KM/H (which means 61.5 Miles)\nE.G: you want unlimited range, put the max.", 2, 99, 4, 1, function()end) -- Maximise your chance to hit enemy to high range
 
     CruiseRoot:toggle_loop("Toggle Cooldown Cruise Missile", {'cruisemissilecooldown'}, EXECUTION_FUNCTION_WORKING(false), function()
         SET_INT_GLOBAL(262145 + 30187, 0)
