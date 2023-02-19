@@ -485,7 +485,7 @@ end
     CruiseRoot:action(CruiseTranslate("Revert to Default State"), {'cruisedefault'}, CruiseTranslate("Revert to Default State like Cruise Missile Range and Cooldown."), function() -- Revert Default Settings
         SET_INT_GLOBAL(262145 + 30188, 4000) -- Remove Bypass
         SET_INT_GLOBAL(262145 + 30187, 60000) -- Cooldown Time
-        CruiseToast(CruiseTranslate("> Crusie Missile\nReverted to Default State"))
+        CruiseToast(CruiseTranslate("> CruiseMissile\nReverted to Default State"))
     end)
 
     ----================----
