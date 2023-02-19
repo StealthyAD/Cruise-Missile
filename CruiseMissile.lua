@@ -18,7 +18,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.31"
+local SCRIPT_VERSION = "0.32"
 local edition_menu = "99.4"
 
 ----===========----
@@ -166,6 +166,12 @@ end
             ["Hello "] = "Salut ",
             ["\nWelcome to Cruise Missile "] = "\nBienvenue dans le script Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nPas de mise à jour trouvé.",
+            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nStatus : Missile à courte portée",
+            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nStatus : Missile standard",
+            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nStatus : Missile à moyenne portée",
+            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nStatus : Missile à longue portée",
+            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nStatus : Missile à très longue portée",
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nParamètres remis par défaut",
         },
 
         de = { -- German Language (Deutsch)
@@ -200,6 +206,12 @@ end
             ["Hello "] = "Guten Tag ",
             ["\nWelcome to Cruise Missile "] = "\nWillkommen im script Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nKeine Updates gefunden.",
+            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nStatus : Kurzstreckenrakete",
+            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nStatus : Standardrakete",
+            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nStatus : Mittelstreckenrakete",
+            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nStatus : Langstreckenrakete",
+            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nStatus : Rakete mit extra großer Reichweite",
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nZurückgesetzt auf den Standardzustand",
         },
         it = { -- Italian Language (Italiano)
             ["Restart Script"] = "Script di riavvio",
@@ -233,6 +245,12 @@ end
             ["Hello "] = "Ciao ",
             ["\nWelcome to Cruise Missile "] = "\nBenvenuti a Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nNessun aggiornamento trovato.",
+            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nStato : Missile a corto raggio",
+            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nStato : Missile Standard",
+            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nStato : Missile a medio raggio",
+            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nStato : Missile a lungo raggio",
+            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nStato : Missile a lunghissima gittata",
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nRipristino dello stato predefinito",
         },
 
         es = { -- Spanish Language (Español)
@@ -267,6 +285,12 @@ end
             ["Hello "] = "Hola ",
             ["\nWelcome to Cruise Missile "] = "\nBienvenido a script Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nNo se han encontrado actualizaciones.",
+            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nEstatus : Misil de Corto Alcance",
+            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nEstatus : Misil Estándar",
+            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nEstado : Misil de Alcance Medio",
+            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nEstado : Misil Largo Alcance",
+            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nEstado : Misil Extra Largo Alcance",
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nVolver al estado por defecto",
         },
         pt = { -- Portuguese/Brazil Language (Português)
             ["Restart Script"] = "Reiniciar o Roteiro",
@@ -300,6 +324,12 @@ end
             ["Hello "] = "Olá ",
             ["\nWelcome to Cruise Missile "] = "\nBem-vindo ao Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "Nenhuma actualização encontrada",
+            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nEstado : Míssil de curto alcance",
+            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nEstado : Míssil padrão",
+            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nEstado : Estado : Míssil de médio alcance",
+            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nEstado : Míssil de Longo Alcance",
+            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nEstado : Míssil de longo alcance extra",
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nRevertido para Estado por defeito",
         },
         ru = { -- Russian Language (русский)
             ["Restart Script"] = "Сценарий перезапуска",
@@ -332,7 +362,13 @@ end
             ["Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."] = "Если возникнут проблемы, перезапустите скрипт.\nПРИМЕЧАНИЕ: Это мгновенно изменит некоторые настройки ракеты.",
             ["Hello "] = "Привет ",
             ["\nWelcome to Cruise Missile "] = "\nДобро пожаловать в Cruise Missile ",
-            ["> CruiseMissile\nNo updates found."] = "Обновления не найдены"
+            ["> CruiseMissile\nNo updates found."] = "Обновления не найдены",
+            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nСтатус : Ракета малой дальности",
+            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nСтатус : Стандартная ракета",
+            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nСтатус : Ракета средней дальности",
+            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nСтатус : Ракета большой дальности",
+            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nСтатус : Ракета сверхдальнего действия",
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nВозврат к состоянию по умолчанию"
         }
     }
 
@@ -422,17 +458,17 @@ end
         SET_INT_GLOBAL(262145 + 30188, menu.get_value(CruiseMissileFire) * 1000)
 
         if menu.get_value(CruiseMissileFire) >= 20 then -- Extra Long Range Range Missile
-            CruiseHelp("Cruise Missile\nStatus : Extra Long Range Missile")
+            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Extra Long Range Missile"))
             CruiseCommands('damagemultiplier 10000')
         end
 
         if menu.get_value(CruiseMissileFire) >= 10 and menu.get_value(CruiseMissileFire) <= 19 then -- Long Range Missile
-            CruiseHelp("Cruise Missile\nStatus : Long Range Missile")
+            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Long Range Missile"))
             CruiseCommands('damagemultiplier 7500')
         end
 
         if menu.get_value(CruiseMissileFire) >=6 and menu.get_value(CruiseMissileFire) <= 9 then -- Medium Range Missile
-            CruiseHelp("Cruise Missile\nStatus : Medium Range Missile")
+            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Medium Range Missile"))
             CruiseCommands('damagemultiplier 10000')
         end
 
@@ -441,7 +477,7 @@ end
             CruiseCommands('damagemultiplier 1')
         end
         if menu.get_value(CruiseMissileFire) >= 2 and menu.get_value(CruiseMissileFire) <= 3 then -- Short Range Missile
-            CruiseHelp("Cruise Missile\nStatus : Short Range Missile")
+            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Short Range Missile"))
             CruiseCommands('damagemultiplier 1')
         end
     end)
@@ -449,7 +485,7 @@ end
     CruiseRoot:action(CruiseTranslate("Revert to Default State"), {'cruisedefault'}, CruiseTranslate("Revert to Default State like Cruise Missile Range and Cooldown."), function() -- Revert Default Settings
         SET_INT_GLOBAL(262145 + 30188, 4000) -- Remove Bypass
         SET_INT_GLOBAL(262145 + 30187, 60000) -- Cooldown Time
-        CruiseToast("> Crusie Missile\nReverted to Default State")
+        CruiseToast(CruiseTranslate("> Crusie Missile\nReverted to Default State"))
     end)
 
     ----================----
