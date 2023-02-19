@@ -62,7 +62,7 @@ end
 
     local default_check_interval = 604800
     local auto_update_config = {
-        source_url="https://raw.githubusercontent.com/StealthyAD/Cruise-Missile/main/Cruise%20Missile.lua",
+        source_url="https://raw.githubusercontent.com/StealthyAD/Cruise-Missile/main/CruiseMissile.lua",
         script_relpath=SCRIPT_RELPATH,
         switch_to_branch=selected_branch,
         verify_file_begins_with="--",
@@ -95,7 +95,7 @@ end
 
     -- Run Auto Update
     auto_updater.run_auto_update({
-        source_url="https://raw.githubusercontent.com/StealthyAD/Cruise-Missile/main/Cruise%20Missile.lua",
+        source_url="https://raw.githubusercontent.com/StealthyAD/Cruise-Missile/main/CruiseMissile.lua",
         script_relpath=SCRIPT_RELPATH,
         verify_file_begins_with="--"
     })
