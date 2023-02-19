@@ -18,7 +18,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.34"
+local SCRIPT_VERSION = "0.34 bis"
 local edition_menu = "99.4"
 
 ----===========----
@@ -175,7 +175,7 @@ end
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nParamètres remis par défaut",
             ------------- Cruise Range Messages -------------
             ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nStatus : Actif (15 KM)",
-			["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStatus : Actif (30 KM)",
+	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStatus : Actif (30 KM)",
             ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nStatus : Actif (60 KM)",
             ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nStatus : Actif",
             ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nStatus : Inactif (15 KM)",
@@ -225,7 +225,7 @@ end
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nZurückgesetzt auf den Standardzustand",
             ------------- Cruise Range Messages -------------
             ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nStatus : Aktiv (15 KM)",
-			["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStatus : Aktiv (30 KM)",
+	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStatus : Aktiv (30 KM)",
             ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nStatus : Aktiv (60 KM)",
             ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nStatus : Aktiv",
             ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nStatus : Inaktiv (15 KM)",
@@ -274,7 +274,7 @@ end
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nRipristino dello stato predefinito",
             ------------- Cruise Range Messages -------------
             ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nStato : Attivo (15 KM)",
-			["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStato : Attivo (30 KM)",
+	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStato : Attivo (30 KM)",
             ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nStato : Attivo (60 KM)",
             ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nStato : Attivo",
             ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nStato : Inattivo (15 KM)",
@@ -324,7 +324,7 @@ end
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nVolver al estado por defecto",
             ------------- Cruise Range Messages -------------
             ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nEstado : Activo (15 KM)",
-			["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nEstado : Activo (30 KM)",
+	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nEstado : Activo (30 KM)",
             ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nEstado : Activo (60 KM)",
             ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nEstado : Activo",
             ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nEstado : Inactivo (15 KM)",
@@ -373,7 +373,7 @@ end
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nRevertido para Estado por defeito",
             ------------- Cruise Range Messages -------------
             ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nEstado : Activo (15 KM)",
-			["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nEstado : Activo (30 KM)",
+	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nEstado : Activo (30 KM)",
             ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nEstado : Activo (60 KM)",
             ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nEstado : Activo",
             ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nEstado : Inactivo (15 KM)",
@@ -422,7 +422,7 @@ end
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nВозврат к состоянию по умолчанию",
             ------------- Cruise Range Messages -------------
             ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nСтатус : Активный (15 KM)",
-			["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nСтатус : Активный (30 KM)",
+	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nСтатус : Активный (30 KM)",
             ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nСтатус : Активный (60 KM)",
             ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nСтатус : Активный",
             ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nСтатус : Неактивный (15 KM)",
@@ -533,7 +533,7 @@ end
         end
 
         if menu.get_value(CruiseMissileFire) >= 4 and menu.get_value(CruiseMissileFire) <= 5 then -- Standard Missile
-            CruiseHelp("Cruise Missile\nStatus : Standard Missile")
+            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Standard Missile"))
             CruiseCommands('damagemultiplier 1')
         end
         if menu.get_value(CruiseMissileFire) >= 2 and menu.get_value(CruiseMissileFire) <= 3 then -- Short Range Missile
