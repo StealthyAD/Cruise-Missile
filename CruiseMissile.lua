@@ -506,7 +506,7 @@ end
     CruiseMiscs:divider(CruiseTranslate("Informations"))
     CruiseMiscs:action("Version: " ..SCRIPT_VERSION, {}, "", function()end)
     CruiseMiscs:action("Stand Edition: " ..edition_menu, {}, "", function()end)
-    CruiseMiscs:action(CruiseTranslate("Check for Update"), {'cruiseupdate'}, CruiseTranslate("The script will automatically check for updates at most daily, but you can manually check using this option anytime."), function()
+    CruiseMiscs:action(CruiseTranslate("Check for Updates"), {'cruiseupdate'}, CruiseTranslate("The script will automatically check for updates at most daily, but you can manually check using this option anytime."), function()
     auto_update_config.check_interval = 0
         if auto_updater.run_auto_update(auto_update_config) then
             util.toast(CruiseTranslate("> CruiseMissile\nNo updates found."))
