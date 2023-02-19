@@ -18,7 +18,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.34 bis"
+local SCRIPT_VERSION = "0.34 bis-1"
 local edition_menu = "99.4"
 
 ----===========----
@@ -294,7 +294,7 @@ end
             ["Toggle Cooldown Cruise Missile"] = "Míssil de Cruzeiro de Refrigeração Toggle Cooldown",
             ["Execute Cruise Missile"] = "Míssil de Cruzeiro de Fogo",
             ["Revert to Default State"] = "Regressar ao Estado por defeito",
-            ["Others"] = "Regressar ao Estado por defeito",
+            ["Others"] = "Outros",
             ["Request Kosatka"] = "Pedir Kosatka",
             ["Miscellaneous"] = "Diversos",
             ["Check for Updates"] = "Verificar por Actualização",
