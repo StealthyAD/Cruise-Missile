@@ -17,7 +17,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.2"
+local SCRIPT_VERSION = "0.3"
 local edition_menu = "99.3"
 
 ----===========----
@@ -55,6 +55,51 @@ function EXECUTION_FUNCTION_WORKING(IsAddNewLine)
     end
     return State
 end
+
+    ----===============----
+    --- Update Features
+    ----===============----
+
+    local default_check_interval = 604800
+    local auto_update_config = {
+        source_url="https://raw.githubusercontent.com/StealthyAD/Cruise-Missile/main/Cruise%20Missile.lua",
+        script_relpath=SCRIPT_RELPATH,
+        switch_to_branch=selected_branch,
+        verify_file_begins_with="--",
+        check_interval=86400,
+        silent_updates=true,
+    }
+
+    -- Auto Updater from https://github.com/hexarobi/stand-lua-auto-updater
+    local status, auto_updater = pcall(require, "auto-updater")
+    if not status then
+        local auto_update_complete = nil util.toast("Installing auto-updater...", TOAST_ALL)
+        async_http.init("raw.githubusercontent.com", "/hexarobi/stand-lua-auto-updater/main/auto-updater.lua",
+            function(result, headers, status_code)
+                local function parse_auto_update_result(result, headers, status_code)
+                    local error_prefix = "Error downloading auto-updater: "
+                    if status_code ~= 200 then util.toast(error_prefix..status_code, TOAST_ALL) return false end
+                    if not result or result == "" then util.toast(error_prefix.."Found empty file.", TOAST_ALL) return false end
+                    filesystem.mkdir(filesystem.scripts_dir() .. "lib")
+                    local file = io.open(filesystem.scripts_dir() .. "lib\\auto-updater.lua", "wb")
+                    if file == nil then util.toast(error_prefix.."Could not open file for writing.", TOAST_ALL) return false end
+                    file:write(result) file:close() util.toast("Successfully installed auto-updater lib", TOAST_ALL) return true
+                end
+                auto_update_complete = parse_auto_update_result(result, headers, status_code)
+            end, function() util.toast("Error downloading auto-updater lib. Update failed to download.", TOAST_ALL) end)
+        async_http.dispatch() local i = 1 while (auto_update_complete == nil and i < 40) do util.yield(250) i = i + 1 end
+        if auto_update_complete == nil then error("Error downloading auto-updater lib. HTTP Request timeout") end
+        auto_updater = require("auto-updater")
+    end
+    if auto_updater == true then error("Invalid auto-updater lib. Please delete your Stand/Lua Scripts/lib/auto-updater.lua and try again") end
+
+    -- Run Auto Update
+    auto_updater.run_auto_update({
+        source_url="https://raw.githubusercontent.com/StealthyAD/Cruise-Missile/main/Cruise%20Missile.lua",
+        script_relpath=SCRIPT_RELPATH,
+        verify_file_begins_with="--"
+    })
+    auto_updater.run_auto_update(auto_update_config)
 
 ----================----
 --- Main Cruise Root
@@ -184,9 +229,15 @@ end
     ----=======----
 
     CruiseMiscs:divider("Credits")
-    local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
-    CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/Cruise-Missile")
-    CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
+        local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
+        CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/Cruise-Missile")
+        CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
+        CruiseSTMiscs:action("Check for Update", {'cruiseupdate'}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
+            auto_update_config.check_interval = 0
+            if auto_updater.run_auto_update(auto_update_config) then
+                util.toast(ForceTranslate("> Cruise Missile\nNo updates found."))
+            end
+        end)
     
     ----=========----
     --- Resources
@@ -195,3 +246,11 @@ end
     CruiseMiscs:divider("Resources")
     CruiseMiscs:hyperlink("Stand API", "https://stand.gg/help/lua-api-documentation", "Provides much features & essentials for Lua Scripts.")
     CruiseMiscs:hyperlink("NativeDB", "https://nativedb.dotindustries.dev/natives", "Provided for using GTAV natives.")
+
+----=============----
+--- Loop Function 
+----=============----
+
+if not SCRIPT_SILENT_START then
+    util.toast("Hello ".. players.get_name(players.user()).. "\nWelcome to Cruise Missile " ..SCRIPT_VERSION)
+end
