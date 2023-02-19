@@ -18,7 +18,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.3 bis-2"
+local SCRIPT_VERSION = "0.31"
 local edition_menu = "99.4"
 
 ----===========----
