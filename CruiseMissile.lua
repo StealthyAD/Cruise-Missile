@@ -17,7 +17,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.3"
+local SCRIPT_VERSION = "0.3 bis"
 local edition_menu = "99.3"
 
 ----===========----
@@ -119,32 +119,32 @@ end
 
     local CruisePresets = CruiseRoot:list("Presets")
 
-        CruisePresets:toggle_loop("Cruise Missile Range (15 KM)", {"cruise15km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 10 KM Cruise Missile Range
-            CruiseHelp("Cruise Missile\nStatus : Active (15 KM)")
+        CruisePresets:toggle_loop("Cruise Missile Range (9.32 Miles)", {"cruise15km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 9.32 Miles Cruise Missile Range
+            CruiseHelp("Cruise Missile\nStatus : Active (9.32 Miles)")
             CruiseCommands('damagemultiplier 7500')
             SET_INT_GLOBAL(262145 + 30188, 15000)
         end, function()
-            CruiseHelp("Cruise Missile\nStatus : Inactive (15 KM)")
+            CruiseHelp("Cruise Missile\nStatus : Inactive (9.32 Miles)")
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
 
-        CruisePresets:toggle_loop("Cruise Missile Range (30 KM)", {"cruise30km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 30 KM Cruise Missile Range
-            CruiseHelp("Cruise Missile\nStatus : Active (30 KM)")
+        CruisePresets:toggle_loop("Cruise Missile Range (18.6 Miles)", {"cruise30km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 18.6 miles Cruise Missile Range
+            CruiseHelp("Cruise Missile\nStatus : Active (18.6 Miles)")
             CruiseCommands('damagemultiplier 8500')
             SET_INT_GLOBAL(262145 + 30188, 30000)
         end, function()
-            CruiseHelp("Cruise Missile\nStatus : Inactive (30 KM)")
+            CruiseHelp("Cruise Missile\nStatus : Inactive (18.6 Miles)")
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
 
-        CruisePresets:toggle_loop("Cruise Missile Range (60 KM)", {"cruise60km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 60 KM Cruise Missile Range
-            CruiseHelp("Cruise Missile\nStatus : Active (60 KM)")
+        CruisePresets:toggle_loop("Cruise Missile Range (37.2 Miles)", {"cruise60km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 37.2 Miles Cruise Missile Range
+            CruiseHelp("Cruise Missile\nStatus : Active (37.2 Miles)")
             CruiseCommands('damagemultiplier 10000')
             SET_INT_GLOBAL(262145 + 30188, 60000)
         end, function()
-            CruiseHelp("Cruise Missile\nStatus : Inactive (60 KM)")
+            CruiseHelp("Cruise Missile\nStatus : Inactive (37.2 Miles)")
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
@@ -235,9 +235,9 @@ end
     ----=======----
 
     CruiseMiscs:divider("Credits")
-        local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
-        CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/Cruise-Missile")
-        CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
+    local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
+    CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/Cruise-Missile")
+    CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
     
     ----=========----
     --- Resources
