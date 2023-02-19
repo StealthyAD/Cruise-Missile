@@ -18,7 +18,7 @@ util.require_natives('natives-1663599433-uno')
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.34 bis-1"
+local SCRIPT_VERSION = "0.34.1"
 local edition_menu = "99.4"
 
 ----===========----
@@ -302,7 +302,7 @@ end
             ["Provides much features & essentials for Lua Scripts."] = "Fornece muitas características & essências para Lua Scripts.",
             ["StealthyAD.#8293 (Developer CruiseMissile)"] = "StealthyAD.#8293 (Desenvolvedor CruiseMissile)",
             ["Make sure you put the limit atleast 99 KM/H (which means 61.5 Miles)\nE.G: you want unlimited range, put the max."] = "Certifique-se de colocar o limite no mínimo 99 KM/H (o que significa 61,5 Milhas)\n Por exemplo: pretende um alcance ilimitado, coloque o máximo.",
-            ["NOTE: For indication detection, it tells you according to the range of the missile.\n\n- 2 to 4 Km - Short Missile\n- 4 to 6 Km - Standard Missile\n- 6 to 10 Km - Medium Missile\n- 10 to 19 Km - Long Range Missile\n- Superior than 20 Km - Extra Long Range Missile\n\nWARNING: Changing the session will put your Cruise Missile to Default State."] = "NOTA: Para detecção de indicações, diz-lhe de acordo com o alcance do míssil.\n- 2 a 4 Km - Míssil Curto- 4 a 6 Km - Míssil Padrão- 6 a 10 Km - Míssil Médio- 10 a 19 Km - Míssil Longo Alcance Superior a 20 Km - Míssil Extra Longo Alcance: Mudando a sessão colocará o seu Míssil de Cruzeiro no estado por defeito.",
+            ["NOTE: For indication detection, it tells you according to the range of the missile.\n\n- 2 to 4 Km - Short Missile\n- 4 to 6 Km - Standard Missile\n- 6 to 10 Km - Medium Missile\n- 10 to 19 Km - Long Range Missile\n- Superior than 20 Km - Extra Long Range Missile\n\nWARNING: Changing the session will put your Cruise Missile to Default State."] = "NOTA: Para detecção de indicações, diz-lhe de acordo com o alcance do míssil.\n- 2 a 4 Km - Míssil Curto\n- 4 a 6 Km - Míssil Padrão\n- 6 a 10 Km - Míssil Médio\n- 10 a 19 Km - Míssil Longo Alcance\nSuperior a 20 Km - Míssil Extra Longo Alcance\n\nAVISO: Mudar a sessão colocará o seu Míssil de Cruzeiro no estado por defeito.",
             ["Revert to Default State like Cruise Missile Range and Cooldown."] = "Reverter para o estado por defeito como o Cruise Missile Range e Cooldown.",
             ["Visit my GitHub Page"] = "Visite a minha página GitHub",
             ["Join my TikTok"] = "Junte-se ao meu TikTok",
