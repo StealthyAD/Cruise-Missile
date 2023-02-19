@@ -8,8 +8,6 @@ Cruise Missile Features
 - Cruise Missile Presets (15 km/h, 30 km/h, 60 km/h and No Limit Boundaries for Missiles)
 - Custom Range but differs according to distance and damage.
 ```
-________
-
 # Installation
 ______________
 
