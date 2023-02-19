@@ -223,6 +223,12 @@ end
     CruiseMiscs:divider("Informations")
     CruiseMiscs:action("Version: " ..SCRIPT_VERSION, {}, "", function()end)
     CruiseMiscs:action("Stand Edition: " ..edition_menu, {}, "", function()end)
+    CruiseMiscs:action("Check for Update", {'cruiseupdate'}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
+    auto_update_config.check_interval = 0
+        if auto_updater.run_auto_update(auto_update_config) then
+            util.toast("> Cruise Missile\nNo updates found.")
+        end
+    end)
 
     ----=======----
     --- Credits
@@ -232,12 +238,6 @@ end
         local CruiseSTMiscs = CruiseMiscs:list("StealthyAD.#8293 (Developer Cruise Missile)")
         CruiseSTMiscs:hyperlink("Visit my GitHub Page", "https://github.com/StealthyAD/Cruise-Missile")
         CruiseSTMiscs:hyperlink("Join my TikTok", "https://www.tiktok.com/@xstealthyhd")
-        CruiseMiscs:action("Check for Update", {'cruiseupdate'}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
-            auto_update_config.check_interval = 0
-            if auto_updater.run_auto_update(auto_update_config) then
-                util.toast(ForceTranslate("> Cruise Missile\nNo updates found."))
-            end
-        end)
     
     ----=========----
     --- Resources
