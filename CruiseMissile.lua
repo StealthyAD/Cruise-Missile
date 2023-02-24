@@ -10,7 +10,6 @@
 --- Natives Stand
 ----=============----
 
-util.keep_running()
 util.require_natives("natives-1660775568")
 util.require_natives('natives-1663599433-uno')
 
@@ -282,55 +281,6 @@ end
             ["Cruise Missile\nStatus : Inactive (37.2 Miles)"] = "Cruise Missile\nEstado : Inactivo (60 KM)",
             ["Cruise Missile\nStatus : Inactive"] = "Cruise Missile\nEstado : Inactivo",
         },
-        pt = { -- Portuguese/Brazil Language (Português)
-            ["Restart Script"] = "Reiniciar o Roteiro",
-            ["Main Menu"] = "Menu principal",
-            ["Presets"] = "Predefinições",
-            ["Cruise Missile Range (9.32 Miles)"] = "Gama de Mísseis de Cruzeiro (15 KM)",
-            ["Cruise Missile Range (18.6 Miles)"] = "Gama de Mísseis de Cruzeiro (30 KM)",
-            ["Cruise Missile Range (37.2 Miles)"] = "Gama de Mísseis de Cruzeiro (60 KM)",
-            ["Cruise Missile Range (Bypass)"] = "Alcance sem limite de mísseis de cruzeiro",
-            ["Cruise Missile Range"] = "Gama de Mísseis de Cruzeiro",
-            ["Toggle Cooldown Cruise Missile"] = "Míssil de Cruzeiro de Refrigeração Toggle Cooldown",
-            ["Execute Cruise Missile"] = "Míssil de Cruzeiro de Fogo",
-            ["Revert to Default State"] = "Regressar ao Estado por defeito",
-            ["Others"] = "Outros",
-            ["Request Kosatka"] = "Pedir Kosatka",
-            ["Miscellaneous"] = "Diversos",
-            ["Check for Updates"] = "Verificar por Actualização",
-            ["Provided for using GTAV natives."] = "Fornecido para a utilização de nativos de GTAV.",
-            ["Provides much features & essentials for Lua Scripts."] = "Fornece muitas características & essências para Lua Scripts.",
-            ["StealthyAD.#8293 (Developer CruiseMissile)"] = "StealthyAD.#8293 (Desenvolvedor CruiseMissile)",
-            ["Make sure you put the limit atleast 99 KM/H (which means 61.5 Miles)\nE.G: you want unlimited range, put the max."] = "Certifique-se de colocar o limite no mínimo 99 KM/H (o que significa 61,5 Milhas)\n Por exemplo: pretende um alcance ilimitado, coloque o máximo.",
-            ["NOTE: For indication detection, it tells you according to the range of the missile.\n\n- 2 to 4 Km - Short Missile\n- 4 to 6 Km - Standard Missile\n- 6 to 10 Km - Medium Missile\n- 10 to 19 Km - Long Range Missile\n- Superior than 20 Km - Extra Long Range Missile\n\nWARNING: Changing the session will put your Cruise Missile to Default State."] = "NOTA: Para detecção de indicações, diz-lhe de acordo com o alcance do míssil.\n- 2 a 4 Km - Míssil Curto\n- 4 a 6 Km - Míssil Padrão\n- 6 a 10 Km - Míssil Médio\n- 10 a 19 Km - Míssil Longo Alcance\n- Superior a 20 Km - Míssil Extra Longo Alcance\n\nAVISO: Mudar a sessão colocará o seu Míssil de Cruzeiro no estado por defeito.",
-            ["Revert to Default State like Cruise Missile Range and Cooldown."] = "Reverter para o estado por defeito como o Cruise Missile Range e Cooldown.",
-            ["Visit my GitHub Page"] = "Visite a minha página GitHub",
-            ["Join my TikTok"] = "Junte-se ao meu TikTok",
-            ["Informations"] = "Informações",
-            ["Credits"] = "Créditos",
-            ["Resources"] = "Recursos",
-            ["The script will automatically check for updates at most daily, but you can manually check using this option anytime."] = "O script verificará automaticamente as actualizações no máximo diariamente, mas pode verificar manualmente usando esta opção em qualquer altura.",
-            ["Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."] = "Reinicie instantaneamente o guião se tiver algum problema.\nNOTA: Irá reverter instantaneamente alguns Mísseis Cruise Settings.",
-            ["Hello "] = "Olá ",
-            ["\nWelcome to Cruise Missile "] = "\nBem-vindo ao Cruise Missile ",
-            ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nNenhuma actualização encontrada",
-            ------------- Cruise Range Settings -------------
-            ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nEstado : Míssil de curto alcance",
-            ["Cruise Missile\nStatus : Standard Missile"] = "Cruise Missile\nEstado : Míssil padrão",
-            ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nEstado : Estado : Míssil de médio alcance",
-            ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nEstado : Míssil de Longo Alcance",
-            ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nEstado : Míssil de longo alcance extra",
-            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nRevertido para Estado por defeito",
-            ------------- Cruise Range Messages -------------
-            ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nEstado : Activo (15 KM)",
-	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nEstado : Activo (30 KM)",
-            ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nEstado : Activo (60 KM)",
-            ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nEstado : Activo",
-            ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nEstado : Inactivo (15 KM)",
-            ["Cruise Missile\nStatus : Inactive (18.6 Miles)"] = "Cruise Missile\nEstado : Inactivo (30 KM)",
-            ["Cruise Missile\nStatus : Inactive (37.2 Miles)"] = "Cruise Missile\nEstado : Inactivo (60 KM)",
-            ["Cruise Missile\nStatus : Inactive"] = "Cruise Missile\nEstado : Inactivo",
-        },
         ru = { -- Russian Language (русский)
             ["Restart Script"] = "Сценарий перезапуска",
             ["Main Menu"] = "Главное меню",
@@ -397,12 +347,6 @@ end
 ----================----
 --- Main Cruise Root
 ----================----
-
-    CruiseRoot:action(CruiseTranslate("Restart Script"), {'cruiserestart'}, CruiseTranslate("Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."), function() -- Restart Script
-        SET_INT_GLOBAL(262145 + 30188, 4000) -- Revert Distance Between Kosatka and Cruise Missile
-        SET_INT_GLOBAL(262145 + 30187, 60000) -- Revert Cooldown
-        util.restart_script()
-    end)
 
     CruiseRoot:divider(CruiseTranslate("Main Menu"))
 
@@ -547,3 +491,10 @@ end
     if not SCRIPT_SILENT_START then
         util.toast(CruiseTranslate("Hello ").. players.get_name(players.user()).. CruiseTranslate("\nWelcome to Cruise Missile ") ..SCRIPT_VERSION)
     end
+
+    util.on_stop(function()
+        SET_INT_GLOBAL(262145 + 30188, 4000) -- Revert Distance Between Kosatka and Cruise Missile
+        SET_INT_GLOBAL(262145 + 30187, 60000) -- Revert Cooldown
+    end)
+
+util.keep_running()
