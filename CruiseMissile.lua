@@ -10,8 +10,8 @@
 --- Natives Stand
 ----=============----
 
-util.require_natives("natives-1660775568")
-util.require_natives("natives-1663599433-uno")
+util.keep_running()
+util.require_natives(1663599433)
 
 ----===============----
 --- Version Script
@@ -496,5 +496,3 @@ end
         SET_INT_GLOBAL(262145 + 30188, 4000) -- Revert Distance Between Kosatka and Cruise Missile
         SET_INT_GLOBAL(262145 + 30187, 60000) -- Revert Cooldown
     end)
-
-util.keep_running()
