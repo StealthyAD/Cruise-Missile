@@ -17,8 +17,7 @@ util.require_natives(1663599433)
 --- Version Script
 ----===============----
 
-local SCRIPT_VERSION = "0.34.4"
-local edition_menu = "99.5"
+local SCRIPT_VERSION = "0.34.6"
 
 ----===========----
 --- Cruise Root
@@ -162,8 +161,6 @@ end
             ["Resources"] = "Ressources",
             ["The script will automatically check for updates at most daily, but you can manually check using this option anytime."] = "Le script vérifiera automatiquement les mises à jour au plus tard tous les jours, mais vous pouvez vérifier manuellement en utilisant cette option à tout moment.",
             ["Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."] = "Redémarrez instantanément le script si vous avez des problèmes liés au script.\nREMARQUE : Il remettra par défaut les paramètres de missiles de croisière.",
-            ["Hello "] = "Salut ",
-            ["\nWelcome to Cruise Missile "] = "\nBienvenue dans le script Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nPas de mise à jour trouvé.",
             ------------- Cruise Range Settings -------------
             ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nStatus : Missile à courte portée",
@@ -172,15 +169,6 @@ end
             ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nStatus : Missile à longue portée",
             ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nStatus : Missile à très longue portée",
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nParamètres remis par défaut",
-            ------------- Cruise Range Messages -------------
-            ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nStatus : Actif (15 KM)",
-	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStatus : Actif (30 KM)",
-            ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nStatus : Actif (60 KM)",
-            ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nStatus : Actif",
-            ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nStatus : Inactif (15 KM)",
-            ["Cruise Missile\nStatus : Inactive (18.6 Miles)"] = "Cruise Missile\nStatus : Inactif (30 KM)",
-            ["Cruise Missile\nStatus : Inactive (37.2 Miles)"] = "Cruise Missile\nStatus : Inactif (60 KM)",
-            ["Cruise Missile\nStatus : Inactive"] = "Cruise Missile\nStatus : Inactif",
         },
 
         de = { -- German Language (Deutsch)
@@ -212,8 +200,6 @@ end
             ["Resources"] = "Ressourcen",
             ["The script will automatically check for updates at most daily, but you can manually check using this option anytime."] = "Das Skript sucht höchstens einmal täglich automatisch nach Aktualisierungen, aber Sie können diese Option auch jederzeit manuell nutzen.",
             ["Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."] = "Starten Sie das Skript sofort neu, wenn Sie Probleme haben.\nHINWEIS: Es wird sofort einige Cruise Settings Missile umkehren.",
-            ["Hello "] = "Guten Tag ",
-            ["\nWelcome to Cruise Missile "] = "\nWillkommen im script Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nKeine Updates gefunden.",
             ------------- Cruise Range Settings -------------
             ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nStatus : Kurzstreckenrakete",
@@ -222,15 +208,6 @@ end
             ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nStatus : Langstreckenrakete",
             ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nStatus : Rakete mit extra großer Reichweite",
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nZurückgesetzt auf den Standardzustand",
-            ------------- Cruise Range Messages -------------
-            ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nStatus : Aktiv (15 KM)",
-	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nStatus : Aktiv (30 KM)",
-            ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nStatus : Aktiv (60 KM)",
-            ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nStatus : Aktiv",
-            ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nStatus : Inaktiv (15 KM)",
-            ["Cruise Missile\nStatus : Inactive (18.6 Miles)"] = "Cruise Missile\nStatus : Inaktiv (30 KM)",
-            ["Cruise Missile\nStatus : Inactive (37.2 Miles)"] = "Cruise Missile\nStatus : Inaktiv (60 KM)",
-            ["Cruise Missile\nStatus : Inactive"] = "Cruise Missile\nStatus : Inaktiv",
         },
         es = { -- Spanish Language (Español)
             ["Restart Script"] = "Script de reinicio",
@@ -261,8 +238,6 @@ end
             ["Resources"] = "Recursos",
             ["The script will automatically check for updates at most daily, but you can manually check using this option anytime."] = "El script comprobará automáticamente si hay actualizaciones como máximo a diario, pero puede comprobarlo manualmente utilizando esta opción en cualquier momento.",
             ["Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."] = "Reinicie instantáneamente el script si tiene algún problema.\nNOTA: Revertirá instantáneamente algunos Misiles de Configuración de Crucero.",
-            ["Hello "] = "Hola ",
-            ["\nWelcome to Cruise Missile "] = "\nBienvenido a script Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nNo se han encontrado actualizaciones.",
             ------------- Cruise Range Settings -------------
             ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nEstatus : Misil de Corto Alcance",
@@ -271,15 +246,6 @@ end
             ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nEstado : Misil Largo Alcance",
             ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nEstado : Misil Extra Largo Alcance",
             ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nVolver al estado por defecto",
-            ------------- Cruise Range Messages -------------
-            ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nEstado : Activo (15 KM)",
-	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nEstado : Activo (30 KM)",
-            ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nEstado : Activo (60 KM)",
-            ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nEstado : Activo",
-            ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nEstado : Inactivo (15 KM)",
-            ["Cruise Missile\nStatus : Inactive (18.6 Miles)"] = "Cruise Missile\nEstado : Inactivo (30 KM)",
-            ["Cruise Missile\nStatus : Inactive (37.2 Miles)"] = "Cruise Missile\nEstado : Inactivo (60 KM)",
-            ["Cruise Missile\nStatus : Inactive"] = "Cruise Missile\nEstado : Inactivo",
         },
         ru = { -- Russian Language (русский)
             ["Restart Script"] = "Сценарий перезапуска",
@@ -310,8 +276,6 @@ end
             ["Resources"] = "Ресурсы",
             ["The script will automatically check for updates at most daily, but you can manually check using this option anytime."] = "Скрипт будет автоматически проверять наличие обновлений не чаще, чем ежедневно, но вы можете вручную проверять их с помощью этой опции в любое время.",
             ["Restart instantly the script if have any problems.\nNOTE: It will instantly revert some Cruise Settings Missile."] = "Если возникнут проблемы, перезапустите скрипт.\nПРИМЕЧАНИЕ: Это мгновенно изменит некоторые настройки ракеты.",
-            ["Hello "] = "Привет ",
-            ["\nWelcome to Cruise Missile "] = "\nДобро пожаловать в Cruise Missile ",
             ["> CruiseMissile\nNo updates found."] = "> CruiseMissile\nОбновления не найдены",
             ------------- Cruise Range Settings -------------
             ["Cruise Missile\nStatus : Short Range Missile"] = "Cruise Missile\nСтатус : Ракета малой дальности",
@@ -319,16 +283,7 @@ end
             ["Cruise Missile\nStatus : Medium Range Missile"] = "Cruise Missile\nСтатус : Ракета средней дальности",
             ["Cruise Missile\nStatus : Long Range Missile"] = "Cruise Missile\nСтатус : Ракета большой дальности",
             ["Cruise Missile\nStatus : Extra Long Range Missile"] = "Cruise Missile\nСтатус : Ракета сверхдальнего действия",
-            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nВозврат к состоянию по умолчанию",
-            ------------- Cruise Range Messages -------------
-            ["Cruise Missile\nStatus : Active (9.32 Miles)"] = "Cruise Missile\nСтатус : Активный (15 KM)",
-	    ["Cruise Missile\nStatus : Active (18.6 Miles)"] = "Cruise Missile\nСтатус : Активный (30 KM)",
-            ["Cruise Missile\nStatus : Active (37.2 Miles)"] = "Cruise Missile\nСтатус : Активный (60 KM)",
-            ["Cruise Missile\nStatus : Active"] = "Cruise Missile\nСтатус : Активный",
-            ["Cruise Missile\nStatus : Inactive (9.32 Miles)"] = "Cruise Missile\nСтатус : Неактивный (15 KM)",
-            ["Cruise Missile\nStatus : Inactive (18.6 Miles)"] = "Cruise Missile\nСтатус : Неактивный (30 KM)",
-            ["Cruise Missile\nStatus : Inactive (37.2 Miles)"] = "Cruise Missile\nСтатус : Неактивный (60 KM)",
-            ["Cruise Missile\nStatus : Inactive"] = "Cruise Missile\nСтатус : Неактивный"
+            ["> CruiseMissile\nReverted to Default State"] = "> CruiseMissile\nВозврат к состоянию по умолчанию"
         }
     }
 
@@ -357,41 +312,33 @@ end
     local CruisePresets = CruiseRoot:list(CruiseTranslate("Presets"))
 
         CruisePresets:toggle_loop(CruiseTranslate("Cruise Missile Range (9.32 Miles)"), {"cruise15km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 9.32 Miles Cruise Missile Range
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Active (9.32 Miles)"))
             CruiseCommands('damagemultiplier 7500')
             SET_INT_GLOBAL(262145 + 30188, 15000)
         end, function()
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Inactive (9.32 Miles)"))
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
 
         CruisePresets:toggle_loop(CruiseTranslate("Cruise Missile Range (18.6 Miles)"), {"cruise30km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 18.6 miles Cruise Missile Range
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Active (18.6 Miles)"))
             CruiseCommands('damagemultiplier 8500')
             SET_INT_GLOBAL(262145 + 30188, 30000)
         end, function()
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Inactive (18.6 Miles)"))
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
 
         CruisePresets:toggle_loop(CruiseTranslate("Cruise Missile Range (37.2 Miles)"), {"cruise60km"}, EXECUTION_FUNCTION_WORKING(false), function() -- 37.2 Miles Cruise Missile Range
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Active (37.2 Miles)"))
             CruiseCommands('damagemultiplier 10000')
             SET_INT_GLOBAL(262145 + 30188, 60000)
         end, function()
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Inactive (37.2 Miles)"))
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
 
         CruisePresets:toggle_loop(CruiseTranslate("Cruise Missile Range (Bypass)"), {"cruisebypass"}, EXECUTION_FUNCTION_WORKING(false), function() -- Bypass Cruise Missile Range
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Active"))
             CruiseCommands('damagemultiplier 10000')
             SET_INT_GLOBAL(262145 + 30188, 99999)
         end, function()
-            CruiseHelp(CruiseTranslate("Cruise Missile\nStatus : Inactive"))
             CruiseCommands('damagemultiplier 1')
             SET_INT_GLOBAL(262145 + 30188, 4000)
         end)
@@ -459,7 +406,6 @@ end
 
     CruiseMiscs:divider(CruiseTranslate("Informations"))
     CruiseMiscs:readonly("Version: " ..SCRIPT_VERSION)
-    CruiseMiscs:readonly("Stand Edition: " ..edition_menu)
     CruiseMiscs:action(CruiseTranslate("Check for Updates"), {'cruiseupdate'}, CruiseTranslate("The script will automatically check for updates at most daily, but you can manually check using this option anytime."), function()
     auto_update_config.check_interval = 0
         if auto_updater.run_auto_update(auto_update_config) then
@@ -472,7 +418,8 @@ end
     ----=======----
 
     CruiseMiscs:divider("Credits")
-    local CruiseSTMiscs = CruiseMiscs:list(CruiseTranslate("StealthyAD.#8293 (Developer CruiseMissile)"))
+    local CruiseSTMiscs = CruiseMiscs:list(CruiseTranslate("StealthyAD."))
+    CruiseSTMiscs:hyperlink("GitHub Profile", "https://github.com/StealthyAD")
     CruiseSTMiscs:hyperlink(CruiseTranslate("Visit my GitHub Page"), "https://github.com/StealthyAD/Cruise-Missile")
     CruiseSTMiscs:hyperlink(CruiseTranslate("Join my TikTok"), "https://www.tiktok.com/@xstealthyhd")
     
@@ -487,10 +434,6 @@ end
 ----=============----
 --- Loop Function 
 ----=============----
-
-    if not SCRIPT_SILENT_START then
-        util.toast(CruiseTranslate("Hello ").. players.get_name(players.user()).. CruiseTranslate("\nWelcome to Cruise Missile ") ..SCRIPT_VERSION)
-    end
 
     util.on_stop(function()
         SET_INT_GLOBAL(262145 + 30188, 4000) -- Revert Distance Between Kosatka and Cruise Missile
